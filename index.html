@@ -1,1 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visit Suez – Where History Meets the Sea</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Leaflet CSS (map) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <div class="logo-mark">SZ</div>
+        <div>
+          <div class="logo-title">Visit Suez</div>
+          <div class="logo-sub">Where history meets the sea</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#stories">Stories</a>
+        <a href="#map">Map</a>
+        <a href="#plan">Plan</a>
+
+        <a href="index-ar.html" class="lang-switch-link">AR</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO with slider -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active"
+           style="background-image:url('assets/images/hero-suez.jpg');">
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide"
+           style="background-image:url('assets/images/attraction-beach.jpg');">
+      </div>
+      <!-- Slide 3 -->
+      <div class="hero-slide"
+           style="background-image:url('assets/images/attraction-promenade.jpg');">
+      </div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-kicker">Egypt • Red Sea • Suez Canal</p>
+        <h1 class="hero-title">
+          Suez, <span>where history meets the sea.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Walk along sea promenades, discover beaches and heritage houses,
+          and follow the stories of the Suez Canal in one coastal city.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="#attractions" class="btn btn-primary">Discover attractions</a>
+          <a href="#plan" class="btn btn-outline">Plan your trip</a>
+        </div>
+
+        <div class="hero-tags">
+          <span class="tag">Beaches</span>
+          <span class="tag">Heritage</span>
+          <span class="tag">Promenades</span>
+          <span class="tag">Canal stories</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTRACTIONS -->
+  <section id="attractions" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">Attractions</p>
+          <h2 class="section-title">Discover the best of Suez</h2>
+        </div>
+        <p class="section-subtitle">
+          From family beaches and waterfront walks to the national museum,
+          start your journey with these highlights.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/attraction-beach.jpg" alt="Suez beach" />
+            <span class="card-tag">Beach</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Suez Beaches</h3>
+            <p class="card-text">
+              Relax on local beaches facing the Gulf of Suez, with calm water
+              and easy access for families.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/attraction-promenade.jpg" alt="Promenade" />
+            <span class="card-tag">Promenade</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Port Tawfiq Promenade</h3>
+            <p class="card-text">
+              A scenic waterfront walk where the canal meets the sea – perfect
+              for sunset and photography.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/museum-suez.jpg" alt="Museum" />
+            <span class="card-tag">Museum</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Suez National Museum</h3>
+            <p class="card-text">
+              A modern museum telling the story of Suez from ancient trade
+              routes to the modern canal.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE -->
+  <section id="heritage" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">Heritage & History</p>
+          <h2 class="section-title">Walk through living history</h2>
+        </div>
+        <p class="section-subtitle">
+          Suez has always been a gateway city – with mosques, villas and
+          war sites that witnessed key moments.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/heritage-mosque.jpg" alt="Mosque" />
+            <span class="card-tag">Spiritual</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Al-Ghareeb Mosque</h3>
+            <p class="card-text">
+              One of the city’s spiritual hearts and a symbol closely tied to
+              Suez identity.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/museum-suez.jpg" alt="Museum" />
+            <span class="card-tag">Heritage</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Canal & war stories</h3>
+            <p class="card-text">
+              Monuments and open-air sites recall the October War and the role
+              of Suez and its people.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/blog-heritage.jpg" alt="Old Suez" />
+            <span class="card-tag">Old Suez</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Old waterfront houses</h3>
+            <p class="card-text">
+              Historic façades and villas that overlook the sea and the
+              old harbor area.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES -->
+  <section id="stories" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">Stories from Suez</p>
+          <h2 class="section-title">Taste, listen and explore</h2>
+        </div>
+        <p class="section-subtitle">
+          Discover local seafood, everyday life on the corniche and the
+          stories told by the people of Suez.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/blog-seafood.jpg" alt="Seafood" />
+            <span class="card-tag">Food</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Fresh seafood by the gulf</h3>
+            <p class="card-text">
+              Enjoy simple, authentic seafood restaurants with views of the
+              water and passing ships.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/blog-heritage.jpg" alt="Heritage" />
+            <span class="card-tag">Culture</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Everyday canal stories</h3>
+            <p class="card-text">
+              Listen to stories about ships, workers and families who built
+              their lives around the canal.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN -->
+  <section id="plan" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">Plan your trip</p>
+          <h2 class="section-title">Practical information</h2>
+        </div>
+        <p class="section-subtitle">
+          Easy access from Cairo and nearby cities makes Suez ideal for a
+          one-day escape or a full weekend.
+        </p>
+      </div>
+
+      <div class="plan-grid">
+        <div class="plan-card">
+          <h3>Getting there</h3>
+          <p>
+            About 1.5 hours by car from Cairo via Suez Road, with buses and
+            organized day trips available.
+          </p>
+        </div>
+        <div class="plan-card">
+          <h3>Best season</h3>
+          <p>
+            October to April offer comfortable weather for outdoor walks,
+            festivals and sea views.
+          </p>
+        </div>
+        <div class="plan-card">
+          <h3>Suggested day</h3>
+          <p>
+            Morning at the museum, afternoon heritage walk, then sunset on the
+            promenade and dinner by the sea.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP (آخر الصفحة) -->
+  <section id="map" class="section map-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">Interactive map</p>
+          <h2 class="section-title">See Suez from above</h2>
+        </div>
+        <p class="section-subtitle">
+          Explore beaches, promenades, heritage sites and spiritual landmarks.
+          Click on the markers or zoom around the city.
+        </p>
+      </div>
+    </div>
+
+    <div class="map-wrapper">
+      <div id="suezMap"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Visit Suez – demo tourism website.</span>
+      <span>Inspired by leading global destination sites.</span>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <!-- Main script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
 
