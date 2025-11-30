@@ -51,9 +51,10 @@ if (mapEl) {
   };
 
   // ----------------------
-  // ALL LOCATIONS
+  // ALL LOCATIONS + IMAGES
   // ----------------------
   const places = [
+
     // HISTORIC SITES
     {
       cat: "historic",
@@ -62,6 +63,7 @@ if (mapEl) {
       nameEn: "Messageri House",
       nameAr: "بيت المساجيري",
       desc: "Historic European-style maritime building.",
+      image: "messageri-house.jpg"
     },
     {
       cat: "historic",
@@ -70,6 +72,7 @@ if (mapEl) {
       nameEn: "Suez National Museum",
       nameAr: "متحف السويس القومي",
       desc: "The main historical museum in Suez.",
+      image: "museum-suez.jpg"
     },
     {
       cat: "historic",
@@ -78,6 +81,7 @@ if (mapEl) {
       nameEn: "Fortified Point – Ayoun Mousa",
       nameAr: "النقطة الحصينة – عيون موسى",
       desc: "October War site near Ayoun Mousa.",
+      image: "fortified-point.jpg"
     },
     {
       cat: "historic",
@@ -86,6 +90,7 @@ if (mapEl) {
       nameEn: "Shatta Pasha Palace",
       nameAr: "قصر شحاتة باشا سليم",
       desc: "Historic palace overlooking Port Tawfiq.",
+      image: "shatta-palace.jpg"
     },
 
     // RELIGIOUS
@@ -96,6 +101,7 @@ if (mapEl) {
       nameEn: "Al-Ghareeb Mosque",
       nameAr: "مسجد الغريب",
       desc: "Spiritual landmark of Suez.",
+      image: "mosque-ghareeb.jpg"
     },
     {
       cat: "religious",
@@ -104,14 +110,16 @@ if (mapEl) {
       nameEn: "Greek Church – St. Catherine",
       nameAr: "الكنيسة اليونانية – القديسة كاترين",
       desc: "Historic Greek church.",
+      image: "greek-church.jpg"
     },
     {
       cat: "religious",
-      lat: 29.398,
-      lng: 32.729,
-      nameEn: "Anba Antonios Monastery Road",
-      nameAr: "طريق دير الأنبا أنطونيوس",
-      desc: "On the road to Zaafarana.",
+      lat: 29.9548,
+      lng: 32.5565,
+      nameEn: "Good Shepherd Church",
+      nameAr: "كنيسة الراعي الصالح",
+      desc: "One of the main Christian landmarks in Suez.",
+      image: "good-shepherd-church.jpg"
     },
 
     // WATERFRONT
@@ -122,6 +130,7 @@ if (mapEl) {
       nameEn: "El-Sawaissa Beach",
       nameAr: "شاطئ السوايسة",
       desc: "Local family beach.",
+      image: "beach-sawaissa.jpg"
     },
     {
       cat: "waterfront",
@@ -130,6 +139,7 @@ if (mapEl) {
       nameEn: "Port Tawfiq Promenade",
       nameAr: "ممشى بورتوفيق",
       desc: "Sea–canal waterfront walk.",
+      image: "promenade-porttawfiq.jpg"
     },
     {
       cat: "waterfront",
@@ -138,6 +148,7 @@ if (mapEl) {
       nameEn: "Palm Promenade",
       nameAr: "ممشى النخيل",
       desc: "Palm-lined walking area.",
+      image: "palm-promenade.jpg"
     },
 
     // CLUBS
@@ -148,6 +159,7 @@ if (mapEl) {
       nameEn: "Montakhab Suez Club",
       nameAr: "نادي منتخب السويس",
       desc: "Historic football club.",
+      image: "club-montakhab.jpg"
     },
     {
       cat: "clubs",
@@ -156,6 +168,7 @@ if (mapEl) {
       nameEn: "Nasr Petroleum Club",
       nameAr: "نادي النصر للبترول",
       desc: "Sports & family club.",
+      image: "club-nasr.jpg"
     },
     {
       cat: "clubs",
@@ -164,6 +177,7 @@ if (mapEl) {
       nameEn: "Ghazl Suez Club",
       nameAr: "نادي غزل السويس",
       desc: "Sports club.",
+      image: "club-ghazl.jpg"
     },
     {
       cat: "clubs",
@@ -172,16 +186,18 @@ if (mapEl) {
       nameEn: "Family Club",
       nameAr: "نادي الأسرة",
       desc: "Family & kids activities.",
+      image: "club-family.jpg"
     },
 
     // MARINE ACTIVITIES
     {
       cat: "marine",
-      lat: 29.954,
-      lng: 32.563,
-      nameEn: "Port Tawfiq Yacht Marina",
-      nameAr: "مارينا اليخوت ببورتوفيق",
-      desc: "Small yacht marina.",
+      lat: 29.9553,
+      lng: 32.5661,
+      nameEn: "Lucinda Suez",
+      nameAr: "لوسيندا السويس",
+      desc: "Modern waterfront venue with beautiful sea views.",
+      image: "lucinda-suez.jpg"
     },
     {
       cat: "marine",
@@ -190,11 +206,12 @@ if (mapEl) {
       nameEn: "Sea Trips & Ship Photography",
       nameAr: "رحلات بحرية وتصوير السفن",
       desc: "Boats + ship photography zone.",
+      image: "sea-trips.jpg"
     },
   ];
 
   // ----------------------
-  // ADD MARKERS
+  // ADD MARKERS TO MAP
   // ----------------------
   places.forEach((p) => {
     const marker = L.circleMarker([p.lat, p.lng], {
@@ -205,12 +222,14 @@ if (mapEl) {
       weight: 2,
     }).addTo(map);
 
-    marker.bindPopup(
-      `
+    marker.bindPopup(`
       <strong>${p.nameEn} / ${p.nameAr}</strong><br>
+
+      <img src="assets/images/map/${p.image}"
+           style="width:140px; border-radius:8px; margin:8px 0;" />
+
       <span style="font-size:0.85rem;">${p.desc}</span>
-      `
-    );
+    `);
 
     marker.bindTooltip(p.nameEn, { permanent: false });
   });
