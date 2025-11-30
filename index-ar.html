@@ -2,24 +2,19 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>السويس – حيث يلتقي التاريخ بالبحر</title>
+  <title>زوروا السويس – حيث يلتقي التاريخ بالبحر</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
   />
-
-  <!-- Google font عربي -->
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <!-- Main styles -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="rtl">
+<body>
 
   <!-- NAVBAR -->
   <header class="navbar">
@@ -33,19 +28,22 @@
       </div>
 
       <nav class="nav-links">
+        <a href="index.html" class="lang-switch-link">EN</a>
         <a href="#home">الرئيسية</a>
-        <a href="#attractions">الأماكن السياحية</a>
-        <a href="#heritage">التراث والتاريخ</a>
-        <a href="#stories">حكايات من السويس</a>
+        <a href="#attractions">أهم المعالم</a>
+        <a href="#heritage">المواقع التاريخية</a>
+        <a href="#religious">الدينية</a>
+        <a href="#waterfront">الواجهة البحرية</a>
+        <a href="#clubs">النوادي</a>
+        <a href="#marine">أنشطة بحرية</a>
+        <a href="#stories">قصص السويس</a>
         <a href="#map">الخريطة</a>
         <a href="#plan">خطط رحلتك</a>
-
-        <a href="index.html" class="lang-switch-link">EN</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO مع سلايدر -->
+  <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero-overlay"></div>
 
@@ -55,29 +53,32 @@
       <div class="hero-slide"
            style="background-image:url('assets/images/attraction-beach.jpg');"></div>
       <div class="hero-slide"
-           style="background-image:url('assets/images/attraction-promenade.jpg');"></div>
+           style="background-image:url('assets/images/promenade-porttawfiq.jpg');"></div>
     </div>
 
     <div class="container hero-content">
       <div class="hero-text">
         <p class="hero-kicker">مصر • البحر الأحمر • قناة السويس</p>
+
         <h1 class="hero-title">
-          السويس، <span>حيث يلتقي التاريخ بالبحر.</span>
+          السويس، <span>حيث يلتقي التاريخ بالبحر</span>
         </h1>
+
         <p class="hero-subtitle">
-          تمشَّ على الكورنيش، واكتشف الشواطئ والبيوت التراثية، واستمع لحكايات قناة السويس في مدينة ساحلية واحدة.
+          بيوت تاريخية، مزارات دينية، شواطئ، ممشى بحري، وقصص قناة السويس —
+          كل هذا في مدينة واحدة على بوابة القناة.
         </p>
 
         <div class="hero-cta-row">
-          <a href="#attractions" class="btn btn-primary">استكشف المعالم</a>
-          <a href="#plan" class="btn btn-outline">خطّط لرحلتك</a>
+          <a href="#attractions" class="btn btn-primary">اكتشف السويس</a>
+          <a href="#plan" class="btn btn-outline">خطط رحلتك</a>
         </div>
 
         <div class="hero-tags">
-          <span class="tag">شواطئ</span>
-          <span class="tag">تراث</span>
-          <span class="tag">كورنيش البحر</span>
-          <span class="tag">قناة السويس</span>
+          <span class="tag">بيوت تاريخية</span>
+          <span class="tag">مزارات دينية</span>
+          <span class="tag">شواطئ وممشى</span>
+          <span class="tag">قصص القناة</span>
         </div>
       </div>
     </div>
@@ -88,41 +89,33 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <p class="section-kicker">الأماكن السياحية</p>
-          <h2 class="section-title">اكتشف أجمل ما في السويس</h2>
+          <p class="section-kicker">أهم المعالم</p>
+          <h2 class="section-title">نظرة أولى على السويس</h2>
         </div>
+
         <p class="section-subtitle">
-          من الشواطئ العائلية والممشى البحري إلى متحف السويس القومي – هنا بداية رحلتك في المدينة.
+          ابدأ رحلتك مع معالم تجمع البحر بالقناة وقصة المدينة.
         </p>
       </div>
 
       <div class="cards-grid">
+
+        <!-- Messageri House -->
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/attraction-beach.jpg" alt="شاطئ في السويس" />
-            <span class="card-tag">شاطئ</span>
+            <img src="assets/images/messageri-house.jpg" alt="بيت المساجيري" />
+            <span class="card-tag">مبنى تاريخي</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">شواطئ السويس</h3>
+            <h3 class="card-title">بيت المساجيري</h3>
             <p class="card-text">
-              استمتع بشواطئ هادئة على خليج السويس، مناسبة للعائلات ولقضاء يوم مريح على البحر.
+              مبنى تاريخي على الميناء القديم بُني خلال حفر قناة السويس
+              على الطراز الأوروبي.
             </p>
           </div>
         </article>
 
-        <article class="card">
-          <div class="card-image">
-            <img src="assets/images/attraction-promenade.jpg" alt="كورنيش بورتوفيق" />
-            <span class="card-tag">ممشى بحري</span>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">كورنيش بورتوفيق</h3>
-            <p class="card-text">
-              ممشى يطل على البحر والقناة، مثالي لمشاهدة الغروب والتصوير وحركة السفن.
-            </p>
-          </div>
-        </article>
-
+        <!-- Museum -->
         <article class="card">
           <div class="card-image">
             <img src="assets/images/museum-suez.jpg" alt="متحف السويس القومي" />
@@ -131,10 +124,27 @@
           <div class="card-body">
             <h3 class="card-title">متحف السويس القومي</h3>
             <p class="card-text">
-              يعرض تاريخ السويس من العصور القديمة وحتى إنشاء قناة السويس الحديثة.
+              متحف حديث يطل على مدخل القناة ويعرض تاريخ السويس من
+              التجارة القديمة حتى العصر الحديث.
             </p>
           </div>
         </article>
+
+        <!-- Waterfront -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/attraction-beach.jpg" alt="شواطئ السويس" />
+            <span class="card-tag">بحر</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">واجهة السويس البحرية</h3>
+            <p class="card-text">
+              ممشى وشواطئ ممتدة على خليج السويس مع مشاهد السفن
+              المتجهة للقناة.
+            </p>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -144,53 +154,307 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <p class="section-kicker">التراث والتاريخ</p>
-          <h2 class="section-title">امشِ وسط تاريخ حي</h2>
+          <p class="section-kicker">مواقع تاريخية</p>
+          <h2 class="section-title">حيث يلتقي التاريخ بالقناة</h2>
         </div>
+
         <p class="section-subtitle">
-          مساجد وبيوت وفيلات تراثية ومواقع حربية تحكي أدوار السويس عبر العصور.
+          تعرف على أبرز المباني والمواقع المفتوحة التي شهدت أحداثاً مهمة في تاريخ السويس وحرب أكتوبر.
         </p>
       </div>
 
       <div class="cards-grid">
+
+        <!-- Messageri -->
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/heritage-mosque.jpg" alt="مسجد الغريب" />
-            <span class="card-tag">معلم ديني</span>
+            <img src="assets/images/messageri-house.jpg" alt="بيت المساجيري" />
+            <span class="card-tag">تراث بحري</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">بيت المساجيري</h3>
+            <p class="card-text">
+              يقع على الميناء القديم وكان نقطة إرشاد للسفن القادمة للسويس.
+            </p>
+          </div>
+        </article>
+
+        <!-- Palace -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/shatta-palace.jpg" alt="قصر شحاتة باشا" />
+            <span class="card-tag">قصر تاريخي</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">قصر شحاتة باشا – بورتوفيق</h3>
+            <p class="card-text">
+              فيلا أنيقة بطابع معماري مميز تطل على البحر في بورتوفيق.
+            </p>
+          </div>
+        </article>
+
+        <!-- Fortified Point -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/fortified-point.jpg" alt="النقطة الحصينة" />
+            <span class="card-tag">موقع حرب</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">النقطة الحصينة – عيون موسى</h3>
+            <p class="card-text">
+              موقع مفتوح شهد معارك مهمة أثناء حرب أكتوبر قرب عيون موسى.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELIGIOUS -->
+  <section id="religious" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">مزارات دينية</p>
+          <h2 class="section-title">السويس الروحية</h2>
+        </div>
+
+        <p class="section-subtitle">
+          مساجد وكنائس تعكس تاريخاً روحياً غنياً في السويس.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Al-Ghareeb -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/mosque-ghareeb.jpg" alt="مسجد الغريب" />
+            <span class="card-tag">مسجد</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">مسجد الغريب</h3>
             <p class="card-text">
-              من أهم رموز السويس الروحية، ومرتبط باسم المدينة في وجدان أهلها.
+              أحد أهم رموز السويس الروحية، والمدينة تُعرف باسمه.
             </p>
           </div>
         </article>
 
+        <!-- Greek Church -->
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/museum-suez.jpg" alt="تاريخ السويس" />
-            <span class="card-tag">تراث</span>
+            <img src="assets/images/greek-church.jpg" alt="الكنيسة اليونانية" />
+            <span class="card-tag">كنيسة</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">حكايات القناة والحرب</h3>
+            <h3 class="card-title">الكنيسة اليونانية – القديسة كاترين</h3>
             <p class="card-text">
-              مواقع ونصب تذكارية قريبة من السويس وعيون موسى توثّق حرب أكتوبر وقصص البطولة.
+              كنيسة تاريخية خُدمت بها الجالية اليونانية أثناء نشاط الملاحة بالقناة.
             </p>
           </div>
         </article>
 
+        <!-- Good Shepherd Church -->
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/blog-heritage.jpg" alt="بيوت قديمة" />
-            <span class="card-tag">بيوت تاريخية</span>
+            <img src="assets/images/good-shepherd-church.jpg" alt="كنيسة الراعي الصالح" />
+            <span class="card-tag">كنيسة</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">البيوت المطلة على البحر</h3>
+            <h3 class="card-title">كنيسة الراعي الصالح</h3>
             <p class="card-text">
-              واجهات تراثية وفيلات قديمة تطل على البحر والميناء القديم في أحياء السويس.
+              من أبرز الكنائس المسيحية في السويس وتقع في حي الأربعين.
             </p>
           </div>
         </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WATERFRONT -->
+  <section id="waterfront" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">الواجهة البحرية</p>
+          <h2 class="section-title">حيث تلامس المدينة البحر</h2>
+        </div>
+
+        <p class="section-subtitle">
+          شواطئ رملية، ممشى نخيل، وإطلالات ممتدة على الخليج.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Beach -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/attraction-beach.jpg" alt="شاطئ السوايسة" />
+            <span class="card-tag">شاطئ</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">شاطئ السوايسة</h3>
+            <p class="card-text">
+              شاطئ شهير للعائلات للاستمتاع بالبحر والهواء العليل.
+            </p>
+          </div>
+        </article>
+
+        <!-- Promenade -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/promenade-porttawfiq.jpg" alt="ممشى بورتوفيق" />
+            <span class="card-tag">ممشى</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">ممشى بورتوفيق</h3>
+            <p class="card-text">
+              ممشى بحري رائع عند نقطة التقاء البحر بالقناة.
+            </p>
+          </div>
+        </article>
+
+        <!-- Palm Promenade -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/palm-promenade.jpg" alt="ممشى النخيل" />
+            <span class="card-tag">ممشى</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">ممشى النخيل</h3>
+            <p class="card-text">
+              منطقة هادئة للمشي والدراجات تطل مباشرة على البحر.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLUBS -->
+  <section id="clubs" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">النوادي</p>
+          <h2 class="section-title">أندية رياضية واجتماعية</h2>
+        </div>
+
+        <p class="section-subtitle">
+          تضم السويس أندية تاريخية، أندية البترول، ومراكز للشباب والأسرة.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Montakhab -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/club-montakhab.jpg" alt="نادي منتخب السويس" />
+            <span class="card-tag">كرة قدم</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">نادي منتخب السويس</h3>
+            <p class="card-text">
+              أحد أعرق أندية كرة القدم في المدينة.
+            </p>
+          </div>
+        </article>
+
+        <!-- Nasr Petroleum -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/club-nasr.jpg" alt="نادي النصر للبترول" />
+            <span class="card-tag">بترولي</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">نادي النصر للبترول</h3>
+            <p class="card-text">
+              نادٍ رياضي واجتماعي يخدم أسر العاملين بقطاع البترول.
+            </p>
+          </div>
+        </article>
+
+        <!-- Ghazl -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/club-ghazl.jpg" alt="نادي غزل السويس" />
+            <span class="card-tag">رياضي</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">نادي غزل السويس</h3>
+            <p class="card-text">
+              نادي رياضي يستضيف مباريات وأنشطة شبابية.
+            </p>
+          </div>
+        </article>
+
+        <!-- Family Club -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/club-family.jpg" alt="نادي الأسرة" />
+            <span class="card-tag">أسرة</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">نادي الأسرة – حي السويس</h3>
+            <p class="card-text">
+              نادٍ اجتماعي مناسب للعائلات والأطفال.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MARINE -->
+  <section id="marine" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-kicker">أنشطة بحرية</p>
+          <h2 class="section-title">على الماء</h2>
+        </div>
+
+        <p class="section-subtitle">
+          رحلات البحر، المراسي، ونقاط تصوير السفن عند المدخل الجنوبي للقناة.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Lucinda -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/lucinda-suez.jpg" alt="لوسيندا السويس" />
+            <span class="card-tag">مارينا</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">لوسيندا السويس</h3>
+            <p class="card-text">
+              مكان حديث على البحر يقدم جلسات جميلة وإطلالات مميزة على الخليج.
+            </p>
+          </div>
+        </article>
+
+        <!-- Sea Trips -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/sea-trips.jpg" alt="رحلات بحرية" />
+            <span class="card-tag">رحلة بحرية</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">رحلات بحرية وتصوير السفن</h3>
+            <p class="card-text">
+              جولات بحرية قريبة من المدخل الجنوبي للقناة لالتقاط صور مذهلة للسفن المارة.
+            </p>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -200,40 +464,43 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <p class="section-kicker">حكايات من السويس</p>
-          <h2 class="section-title">طعم البحر وحكايات الناس</h2>
+          <p class="section-kicker">قصص السويس</p>
+          <h2 class="section-title">اكتشف الحياة اليومية</h2>
         </div>
+
         <p class="section-subtitle">
-          تعرف على ثقافة المأكولات البحرية وحياة الناس على الكورنيش وحكايات السفن وقناة السويس.
+          تعرف على المأكولات البحرية، الممشى البحري، وحكايات أهل السويس.
         </p>
       </div>
 
       <div class="cards-grid">
+
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/blog-seafood.jpg" alt="مأكولات بحرية" />
+            <img src="assets/images/blog-seafood.jpg" alt="أكلات بحرية" />
             <span class="card-tag">طعام</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">مأكولات بحرية على الخليج</h3>
+            <h3 class="card-title">المأكولات البحرية على الخليج</h3>
             <p class="card-text">
-              مطاعم بسيطة تقدم أسماكًا طازجة مع إطلالة على الخليج وحركة السفن.
+              أجواء بسيطة ومطاعم تقدم أسماك طازجة بإطلالة على البحر.
             </p>
           </div>
         </article>
 
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/blog-heritage.jpg" alt="تراث السويس" />
+            <img src="assets/images/blog-heritage.jpg" alt="تراث" />
             <span class="card-tag">ثقافة</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">حكايات القناة اليومية</h3>
+            <h3 class="card-title">حكايات قناة السويس</h3>
             <p class="card-text">
-              حكايات عن السفن والعمال والأهالي الذين ربطوا حياتهم بقناة السويس.
+              قصص من أهل المدينة عن القناة والسفن والبحار.
             </p>
           </div>
         </article>
+
       </div>
     </div>
   </section>
@@ -244,46 +511,50 @@
       <div class="section-header">
         <div>
           <p class="section-kicker">خطط رحلتك</p>
-          <h2 class="section-title">معلومات عملية</h2>
+          <h2 class="section-title">معلومات مهمة</h2>
         </div>
+
         <p class="section-subtitle">
-          يسهل الوصول للسويس من القاهرة ومدن أخرى، سواء لرحلة يوم أو لعطلة نهاية أسبوع.
+          يمكن الوصول للسويس بسهولة من القاهرة والمدن المجاورة — مناسبة لرحلة يوم أو عطلة نهاية الأسبوع.
         </p>
       </div>
 
       <div class="plan-grid">
         <div class="plan-card">
-          <h3>طريقة الوصول</h3>
+          <h3>كيف تصل؟</h3>
           <p>
-            حوالي ساعة ونصف بالسيارة من القاهرة عبر طريق السويس، مع وجود أتوبيسات ورحلات منظمة.
+            تبعد السويس حوالي ساعة ونصف من القاهرة عبر طريق السويس، مع توفر أتوبيسات ورحلات يومية.
           </p>
         </div>
+
         <div class="plan-card">
           <h3>أفضل وقت للزيارة</h3>
           <p>
-            الفترة من أكتوبر إلى أبريل هي الأنسب للجو المعتدل والأنشطة الخارجية والمهرجانات.
+            من أكتوبر إلى أبريل حيث الطقس لطيف للمشي والنزهات.
           </p>
         </div>
+
         <div class="plan-card">
-          <h3>برنامج مقترح</h3>
+          <h3>مقترح يوم كامل</h3>
           <p>
-            زيارة المتحف صباحاً، جولة تراثية بعد الظهر، ثم غروب على الكورنيش وعشاء يطل على البحر.
+            صباح في المتحف، ومساء في الممشى البحري، وغروب شمس على البحر.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MAP في آخر الصفحة -->
+  <!-- MAP -->
   <section id="map" class="section map-section">
     <div class="container">
       <div class="section-header">
         <div>
-          <p class="section-kicker">خريطة تفاعلية</p>
-          <h2 class="section-title">شاهد السويس من الأعلى</h2>
+          <p class="section-kicker">الخريطة التفاعلية</p>
+          <h2 class="section-title">استكشف السويس من الأعلى</h2>
         </div>
+
         <p class="section-subtitle">
-          استكشف الشواطئ والممشى البحري والمعالم التراثية والمساجد والمواقع الحربية على الخريطة.
+          استكشف الشواطئ والممشى والمواقع التاريخية والكنائس والمساجد والنوادي.
         </p>
       </div>
     </div>
@@ -296,20 +567,15 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> نموذج غير رسمي لموقع سياحي عن السويس.</span>
-      <span>مستوحى من أفضل المواقع السياحية العالمية.</span>
+      <span>© <span id="year"></span> زوروا السويس – موقع سياحي تجريبي</span>
+      <span>مستوحى من أفضل المواقع السياحية العالمية</span>
     </div>
   </footer>
 
   <!-- Leaflet JS -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""
-  ></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <!-- Main script -->
   <script src="js/script.js"></script>
 </body>
 </html>
-
